@@ -1,0 +1,28 @@
+.animate-marquee{
+    animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* swiper button */
+.testimonials-swiper .swiper-slide-next::after ,
+.testimonials-swiper .swiper-slide-prev::after{
+    display: none ;
+}
+
+.swiper-slide-next , .swiper-slide-prev{
+    display: none ;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled{
+    opacity: 0.5 ;
+    cursor: not-allowed;
+}
